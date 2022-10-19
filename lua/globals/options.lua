@@ -8,7 +8,7 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 vim.o.mouse = "a"
-vim.o.guifont = "FiraCode Nerd Font Mono:h11"
+vim.o.guifont = "FiraCode NF:h11"
 vim.o.clipboard = "unnamedplus"
 vim.o.wrap = false
 

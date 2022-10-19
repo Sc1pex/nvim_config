@@ -32,3 +32,5 @@ vim.api.nvim_set_keymap('n', '<leader>c', '<cmd>Bdelete<cr>', options)
 -- Buffer Navigation
 vim.api.nvim_set_keymap('n', '<S-l>', '<cmd>BufferLineCycleNext<cr>', options)
 vim.api.nvim_set_keymap('n', '<S-h>', '<cmd>BufferLineCyclePrev<cr>', options)
+
+-- Telescope

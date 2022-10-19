@@ -7,11 +7,12 @@ local opts = {
         vim.keymap.set("n", "gT", vim.lsp.buf.type_definition, { buffer = 0 })
         vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = 0 })
         vim.keymap.set("n", "<leader>C", vim.lsp.buf.code_action, { buffer = 0 })
-        vim.keymap.set("n", "<leader>lf", vim.lsp.buf.formatting_sync, { buffer = 0 })
+        vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { buffer = 0 })
         vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { buffer = 0 })
         vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_next, { buffer = 0 })
         vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_prev, { buffer = 0 })
-    end
+    end,
+    -- capabilities = require("cmp_nvim_lsp").default_capabilities()
 }
 
 lsp.setup_server = function(server)

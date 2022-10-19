@@ -120,6 +120,39 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig",
     }
 
+    use 'famiu/bufdelete.nvim'
+
+    use "rafamadriz/friendly-snippets"
+
+    use {
+        "L3MON4D3/LuaSnip",
+        requires = "friendly-snippets",
+    }
+
+    use "hrsh7th/nvim-cmp"
+
+    use "onsails/lspkind.nvim"
+
+    use { "saadparwaiz1/cmp_luasnip",
+        after = "nvim-cmp",
+        config = function() end
+    }
+
+    use { "hrsh7th/cmp-buffer",
+        after = "nvim-cmp",
+        config = function() end
+    }
+
+    use { "hrsh7th/cmp-path",
+        after = "nvim-cmp",
+        config = function() end
+    }
+
+    use { "hrsh7th/cmp-nvim-lsp",
+        after = "nvim-cmp",
+        config = function() end
+    }
+
     if packer_bootstrap then
         require('packer').sync()
     end
